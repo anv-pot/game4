@@ -1,0 +1,134 @@
+/* demo */
+
+* {
+  font-family: monospace;
+}
+
+html {
+    background-image: url("../images/star-background.png");
+    padding:0 !important;
+    margin:0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+}
+
+body {
+  color: #999;
+  font-size: 17px;
+    padding:0 !important;
+    margin:0 !important;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+a {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+#rotateContainer {
+    height: 600px;
+  position: relative;
+  padding:0;
+  margin:0;
+}
+
+#rotateImage {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* webgl layout */
+
+.webgl-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#unityContainer {
+  width: 62vw; height: calc((9/16)*62vw);
+  margin: 0 auto !important;
+}
+
+.webgl-content * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.webgl-content {
+  position: relative;
+  width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#unityContainer canvas{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+#custom-logo, #custom-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
+
+#custom-logo {
+    top: 1%;
+    left: 1%;
+    background-image:url("../images/nasa-kids-club.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: calc(20%);
+    height: calc(20%);
+}
+
+#custom-loader, #custom-loader .fill {
+ 
+}
+
+#custom-loader {
+   top: calc(100% - 35px);
+   left: 0%;
+   margin: 0px 0px 0px 0px;
+   background: #cacaca;
+   box-shadow: 0px 0px 15px 5px #1a5bcb;
+   height:35px;
+   width:100%;
+}
+
+#custom-loader .fill {
+    width: 0%;
+    height: 100%;
+    background: #ffe81d;
+}
+
+#custom-loader .label {
+    position: relative;
+    top: -26px;
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    font-family: sans-serif, calibri;
+}
